@@ -36,12 +36,7 @@
 
                                     @if (Route::has('login')) 
                                         @auth
-                                            <ul id="corenav">  
-                                                <li>
-                                                    <a href="{{ route('login') }}">
-                                                        Tracking Pengiriman 
-                                                    </a>
-                                                </li> 
+                                            <ul id="corenav">   
                                                 <li>
                                                     <a href="#"> 
                                                         {{ $user->name }}
@@ -74,12 +69,7 @@
 
                                             
                                         @else 
-                                            <ul id="corenav">  
-                                                <li>
-                                                    <a href="{{ route('login') }}">
-                                                        Tracking Pengiriman 
-                                                    </a>
-                                                </li> 
+                                            <ul id="corenav">   
                                                 <li>
                                                     <a href="{{ route('login') }}">
                                                         Login 
